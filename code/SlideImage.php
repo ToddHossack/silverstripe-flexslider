@@ -67,6 +67,21 @@ class SlideImage extends DataObject implements PermissionProvider
     ];
 
     /**
+     * @param bool $includerelations
+     * @return array
+     */
+    public function fieldLabels($includerelations = true)
+    {
+        $labels = parent::fieldLabels($includerelations);
+        $labels['Name'] = _t(__CLASS__ . '.NAME', 'Name');
+        $labels['Headline'] = _t(__CLASS__ . '.HEADLINE', 'Headline');
+        $labels['Description'] = _t(__CLASS__ . '.DESCRIPTION', 'Description');
+        $labels['SlideLinkID'] =  _t(__CLASS__ . '.PAGE_LINK', "Call to action link");
+        $labels['Image'] = _t(__CLASS__ . '.IMAGE', 'Image');
+        return $labels;
+    }
+    
+    /**
      * @return FieldList
      */
     public function getCMSFields()
@@ -82,10 +97,14 @@ class SlideImage extends DataObject implements PermissionProvider
                 ->setDescription('for internal reference only');
 
             $fields->dataFieldByName('Headline')
-                ->setDescription('optional, used in template');
+                ->setDescription(
+                    _t(__CLASS__ . '.USED_IN_TEMPLATE', 'optional, used in template')
+                );
 
             $fields->dataFieldByName('Description')
-                ->setDescription('optional, used in template');
+                ->setDescription(
+                    _t(__CLASS__ . '.USED_IN_TEMPLATE', 'optional, used in template')
+                );
 
             $fields->dataFieldByName('PageLinkID')
                 ->setTitle("Choose a page to link to:");

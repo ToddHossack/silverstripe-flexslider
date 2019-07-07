@@ -1,0 +1,32 @@
+en:
+  SlideImage:
+    DESCRIPTION: 'Description'
+    HEADLINE: 'Headline'
+    IMAGE: 'Image'
+    INTERNAL_USE: 'for internal reference only'
+    NAME: 'Name'
+    PAGE_LINK: 'Choose a page to link to:'
+    PLURALNAME: 'Slide Images'
+    PLURALS:
+      one: 'A Slide Image'
+      other: '{count} Slide Images'
+    SINGULARNAME: 'Slide Image'
+    SlideType: 'Image or Video'
+    USED_IN_TEMPLATE: 'optional, used in template'
+
+  FlexSlider:
+    ANIMATE: 'Animate automatically'
+    ANIMATION_OPTION: 'Animation option'
+    CAROUSEL_CONTROL_NAV: 'Show Carousel Control Navigation'
+    CAROUSEL_DIRECTION_NAV: 'Show Carousel Direction Navigation'
+    CAROUSEL_THUMBNAIL_COUNT: 'Number of thumbnails'
+    CONTROL_NAV: 'Show ControlNav'
+    DIRECTION_NAV: 'Show DirectionNav'
+    SLIDER_SPEED: 'Slider Speed'
+    fade: 'Fade'
+    LEARN_MORE: 'Learn More'
+    LOOP: 'Loop the carousel'
+    SettingsLabel: 'Slider Settings'
+    slide: 'Slide'
+    SLIDES: 'Slides'
+    THUMBNAIL_NAV: 'Thumbnail Navigation'
