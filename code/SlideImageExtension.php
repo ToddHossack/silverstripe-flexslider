@@ -19,4 +19,9 @@ class SlideImageExtension extends DataExtension
             LinkField::create('SlideLinkID', $this->owner->fieldLabel('SlideLinkID'))
         );
     }
+    
+    public function HasCaption()
+    {
+        return (!empty($this->owner->Headline) || !empty($this->owner->Description));
+    }
 }
